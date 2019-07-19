@@ -1,0 +1,66 @@
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+	
+</head>
+<body>
+	    <script type="text/javascript">
+	    	function fn1()
+	    	{
+	    	var rd1 = document.getElementById('rd1');
+	        var rd2 = document.getElementById("rd2");
+	        if(rd1.checked==true)
+	        {
+              alert("the channel selected is "+ rd1.value);
+	        }
+            else if(rd2.checked==true)
+            {
+            	alert("th channel selected is "+ rd2.value);
+            }
+            else
+            {
+
+            	alert("no channel is selected");
+            }
+
+
+	    	}
+	    </script>
+   <input id="rd1" type="radio" name="grp1" value="simple snippets">simple snippets</input><br>
+   <input id="rd2" type="radio" name="grp1" value="shivam kanathe">shivam kanathe</input><br>
+   <button onclick="fn1()" id="btn1">clicck me</button>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	  <script type="text/javascript">
+	  	function validate()
+	  	{
+	  		var username = document.getElementById("user");
+	  		var password = document.getElementById("pwrd");
+
+	  		if(username.value=="" || password.value=="")
+	  		{
+	  			alert("can't be empty");
+	  			return false;
+	  		}
+	  		else
+	  		{
+	  			true;
+	  		}
+	  		
+
+	  	}
+	  </script>
+	<form onsubmit="return validate()" action="second.html">
+		<input id="user" type="text" placeholder="username"><br><br>
+		<input id="pwrd" type="password" placeholder="password"><br><br>
+		<button id="btn" type="submit">submit</button>
+	</form>
+</body>
+</html>
